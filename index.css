@@ -55,7 +55,6 @@ body {
   width: 19rem;
   height: 4.2rem;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   border-radius: 6px;
@@ -87,6 +86,7 @@ body {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 2.4rem;
 }
 
@@ -99,4 +99,7 @@ body {
   font-weight: 500;
   line-height: 3.2rem;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
