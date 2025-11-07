@@ -2,7 +2,7 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 "/"];
 
 
-const passwordLength = 15;
+let passwordLength = 15;
 
 function generateRandomPassword(passwordLength) {
   let password = '';
@@ -26,3 +26,13 @@ passwordElems.forEach(item => item.textContent = newPassword)
 const generateBtn = document.querySelector('#generate-btn')
 
 generateBtn.addEventListener('click', renderPassword)
+
+
+const formEl = document.querySelector('#form')
+
+formEl.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const newPasswordLength = formEl.querySelector('input').value;
+  passwordLength = newPasswordLength;
+  formEl.reset()
+})

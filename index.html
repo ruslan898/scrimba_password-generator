@@ -13,6 +13,18 @@
         <span>random password</span>
       </h1>
       <p class="subtitle">Never use an insecure password again.</p>
+      <form action="#" id="form">
+        <label for="num-input">(Optional) Specify the password length</label>
+        <input
+          type="number"
+          placeholder="Enter password length"
+          min="5"
+          max="30"
+          id="num-input"
+          required
+        />
+        <button>Enter</button>
+      </form>
       <button class="btn" id="generate-btn">Generate passwords</button>
       <hr class="divider" />
       <div class="passwords-block">
